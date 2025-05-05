@@ -7,3 +7,15 @@ def main(s):
     Returns:
         int: return answer
     """
+    d=s.lower()
+    a=0
+    g=0
+    l=['a','e','o','i','u']
+    while True:
+        if d[a] in l:
+            g+=1
+        a+=1
+        if a==len(d):
+            break
+    return g
+print(main('afajfnaburgfyiuefhakhjauyagryle'))

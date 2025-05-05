@@ -6,4 +6,13 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    a=0
+    l=0
+    while True:
+        if int(s[a])%2==1:
+            l+=int(s[a])
+        a+=1
+        if a==len(s):
+            break
+    return l
+print(main('1313413456898765433245678965342145678654'))

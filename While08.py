@@ -6,4 +6,12 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    a=0
+    l=0
+    while True:
+        if int(s[a])%2==1:
+            l+=1
+        a+=1
+        if a==len(s):
+            break
+    return l
